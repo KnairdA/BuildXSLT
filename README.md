@@ -11,7 +11,7 @@
 
 ## Example:
 
-BuildXSLT can for example be used to build a [static website](https://github.com/KnairdA/TestXSLT) using the following generation chain called via `ixslt --input make.xml --transformation build.xsl`:
+BuildXSLT can for example be used to build a [static website](https://github.com/KnairdA/blog.kummerlaender.eu) using the following generation chain called via `ixslt --input make.xml --transformation build.xsl`:
 
 ```
 <task type="generate">
