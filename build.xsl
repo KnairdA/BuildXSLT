@@ -134,7 +134,7 @@
 
 			<xsl:call-template name="handle_generate">
 				<xsl:with-param name="input"          select="$input"/>
-				<xsl:with-param name="transformation" select="xalan:nodeset($module)/transformation"/>
+				<xsl:with-param name="transformation" select="xalan:nodeset($module)/node()"/>
 			</xsl:call-template>
 		</xsl:when>
 		<xsl:otherwise>
