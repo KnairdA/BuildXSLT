@@ -31,7 +31,13 @@
 			<xsl:message terminate="yes">
 				<xsl:text>Failed to generate transformation "</xsl:text>
 				<xsl:value-of select="string($transformation)"/>
-				<xsl:text>"</xsl:text>
+				<xsl:text>": &#xA;</xsl:text>
+
+				<xsl:for-each select="$result/error">
+					<xsl:text>&#xA;</xsl:text>
+					<xsl:value-of select="."/>
+					<xsl:text>&#xA;</xsl:text>
+				</xsl:for-each>
 			</xsl:message>
 		</xsl:otherwise>
 	</xsl:choose>
